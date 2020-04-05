@@ -1,8 +1,8 @@
 const ClassificationLevel  = {
-    UNCLASSIFIED: 'Unclassified',
-    CONFIDENTIAL: 'Confidential',
-    SECRET: 'Secret',
-    TOP_SECRET: 'Top_secret'
+    UNCLASSIFIED: 'UNCLASSIFIED',
+    CONFIDENTIAL: 'CONFIDENTIAL',
+    SECRET: 'SECRET',
+    TOP_SECRET: 'TOP_SECRET'
 };
 
 module.exports =  ClassificationLevel;
