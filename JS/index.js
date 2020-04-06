@@ -30,6 +30,7 @@ const Airport = require('./Airport');
     let airport = new Airport(planes);
     let militaryAirport = new Airport(airport.getMilitaryPlanes());
     let passengerAirport = new Airport(airport.getPassengerPlanes());
+    
     Airport.print(militaryAirport.sortByMaxDistance());
     Airport.print(passengerAirport.sortByMaxSpeed());
     Airport.print(passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
