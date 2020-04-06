@@ -29,7 +29,7 @@ describe('Airport', () => {
         new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalTypes.HIGH_ALTITUDE, ClassificationLevel.SECRET),
         new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
     ];
-    
+
     let airport;
 
     beforeEach(() => {
@@ -49,10 +49,8 @@ describe('Airport', () => {
     });
 
     it('should check passenger plane with max passenger capacity', () => {
-        let expectedPlaneWithMaxPassengersCapacity = airport.getPassengerPlaneWithMaxPassengersCapacity();
-        assert.isTrue( expectedPlaneWithMaxPassengersCapacity === planeWithMaxPassengerCapacity);
+        assert.isTrue( airport.getPassengerPlaneWithMaxPassengersCapacity() === planeWithMaxPassengerCapacity);
     });
-
 
     it('should get passenger plane with max load capacity', () => {
         let planesSortedByMaxLoadCapacity = airport.sortByMaxLoadCapacity();
