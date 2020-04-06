@@ -31,7 +31,11 @@ describe('Airport', () => {
         new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
     ];
 
-    let airport = new Airport(planes);
+    let airport;
+
+    beforeEach(() => {
+        airport = new Airport(planes);
+    });
 
     it('should have military planes with transport type', () => {
         let transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
